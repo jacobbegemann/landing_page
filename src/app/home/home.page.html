@@ -1,14 +1,72 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title class=".title">
+      Jacob Begemann
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <div style="max-width: 500px;">
+      <ion-list>
+        <ion-avatar class="avatar">
+          <img src="../../assets/img/JacobBegemann.jpg">
+        </ion-avatar>
+        <ion-item>
+          <p class="bio-text">
+            Hello! My name is Jacob Begemann. I'm a rising third year A.B. candidate in Computer Science at Brown
+            University, which is in Rhode Island. I'm originally from Connecticut.
+          </p>
+        </ion-item>
+        <ion-item>
+          <p class="bio-text">
+            Outside of work I play classical violin and viola, and love reading, cats, and travelling.
+          </p>
+        </ion-item>
+        <ion-item>
+          <p class="bio-text">
+            You can check out <a href="https://github.com/jacobbegemann">my portfolio</a> on Github. My username is
+            jacobbegemann.
+          </p>
+        </ion-item>
+        <ion-item>
+          <h6 class="skills-label">Some skills I have:</h6>
+          <ion-item-group class="skills-chips">
+            <ion-chip><ion-icon class="icon" name="logo-html5"></ion-icon>HTML</ion-chip>
+            <ion-chip><ion-icon class="icon" name="logo-css3"></ion-icon>CSS</ion-chip>
+            <ion-chip><ion-icon class="icon"  name="logo-javascript"></ion-icon>Javascript</ion-chip>
+          </ion-item-group>
+        </ion-item>
+      </ion-list>
+    </div>
   </div>
 </ion-content>
+
+<ion-footer class="footer">
+  <div class="contact-section">
+    <ion-item>
+      <ion-label>
+        Contact me!
+      </ion-label>
+      <ion-textarea class="message-box" id="message-box" placeholder="Enter your message..."></ion-textarea>
+    </ion-item>
+    <ion-list>
+      <ion-radio-group>
+        <ion-item>
+          <ion-label class="radio-label">Personal</ion-label>
+          <ion-radio slot="start" value="personal" id="personal">
+          </ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="radio-label">Professional</ion-label>
+          <ion-radio slot="start" value="professional" id="professional">
+          </ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <ion-button expand="block" (click)="presentAlert()">
+        Send!
+      </ion-button>
+    </ion-list>
+  </div>
+</ion-footer>

@@ -1,1 +1,34 @@
+.avatar {
+  margin: auto;
+}
 
+.skills-chips {
+  padding-left: 2%;
+}
+
+.skills-label {
+  padding-bottom: 1%;
+}
+
+.message-box {
+  --padding-bottom: 0;
+}
+
+.contact-label {
+  --padding-bottom: 0;
+}
+
+.footer {
+  text-align: center
+}
+
+.contact-section {
+  width: 50%;
+  display: inline-block;
+  height: 4em;
+  overflow-y: scroll;
+}
+
+.icon {
+  margin-right: 5%;
+}
